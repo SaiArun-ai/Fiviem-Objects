@@ -22,8 +22,15 @@ function gotresult(error,result){
         objects = result;
     }
 }
+var x;
+function SUBMIT(){
+    x = document.getElementById("URL").value;
+    img = loadImage(x);
+}
+
 function draw(){
-    img = loadImage(document.getElementById("URL").value);
+
+
     image(img,0,0,640,420);
     if(status != ""){
         for(i = 0; i<objects.length; i++){
